@@ -16,3 +16,14 @@ const placeSchema = new mongoose.Schema({
 },{timestamps:true})
 
 export const Place = mongoose.model('Place',placeSchema)
+
+
+const animalSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  species: { type: String,  },
+  age: { type: Number },
+  imageUrl : { type: String}
+});
+
+export const Animal = new mongoose.model('Animal',animalSchema)
+

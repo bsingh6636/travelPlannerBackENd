@@ -16,6 +16,7 @@ const storage = new CloudinaryStorage({
 
 const upload = multer ( { storage })
 
+
 router.post('/', upload.single('image'), async (req, res) => {
     const { placeName , placeDetails } = req.body;
     console.log("Place Name:", placeName); // Debugging placeName
@@ -72,4 +73,6 @@ router.get('/', async (req, res) => {
         })
     }
   })
+
+
   export default router;
