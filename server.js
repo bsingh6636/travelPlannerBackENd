@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/api/places',placeRouter)
 app.use('/api/animals', animalRoutes);
 app.use('/api/test' , async ( req , res) =>{
-    res.send('Heloo Testing...')
+    res.send('Heloo Testing...Brijesh')
 })
 
 
